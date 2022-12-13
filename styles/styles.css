@@ -139,3 +139,23 @@ h2 {
 }
 
 /* --- footer --- */
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.logo {
+  margin: auto 1rem;
+  width: 150px;
+}
+
+.footer__containers {
+  padding: 1rem 175px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-left: 1rem;
+}

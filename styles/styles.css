@@ -72,11 +72,38 @@ li a {
 
 h1 {
   padding: 30px;
-  font-size: 5rem;
+  font-size: 4.5rem;
+}
+
+.nav__link,
+.icon {
+  position: relative;
+}
+
+.underline:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 2px;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+  background-color: var(--white);
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
 }
 
 /* --- main --- */
-main {
+main,
+footer {
   padding: 50px 175px;
 }
 
@@ -85,9 +112,12 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+section {
+  margin: 8rem 0;
+}
+
 .interactive {
   position: relative;
-  margin: 4rem 0;
 }
 
 .interactive__image {
@@ -110,4 +140,89 @@ h2 {
 .interactive__description p {
   font-size: 1rem;
   line-height: 1.3rem;
+}
+
+.creations__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: var(--white);
+  border: 2px solid black;
+  padding: 0.5rem 2rem;
+  height: fit-content;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.creations__list {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.creation {
+  position: relative;
+  background-image: url('../images/desktop/image-deep-earth.jpg');
+  background-repeat: no-repeat;
+  height: 430px;
+}
+
+.creation h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: var(--white);
+  font-size: 1.8rem;
+  width: 100px;
+}
+
+/* --- footer --- */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__left,
+.footer__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 2.5rem;
+}
+
+footer ul {
+  margin-left: -1.2rem;
+}
+
+.footer__right {
+  text-align: end;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+}
+
+.icon {
+  width: fit-content;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }

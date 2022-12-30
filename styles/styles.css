@@ -51,7 +51,7 @@ ul {
 li a {
   text-decoration: none;
   color: var(--white);
-  margin: 2rem;
+  margin: 1.2rem;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -61,7 +61,7 @@ li a {
   margin-top: 100px;
   color: var(--white);
   border: 2px solid var(--white);
-  width: 600px;
+  width: 650px;
 }
 
 h1 {

@@ -16,13 +16,14 @@ html {
 
 body {
   font-size: 1rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Alata', sans-serif;
   width: 100%;
 }
 
 h1,
 h2,
 h3 {
+  font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
 }
 
@@ -105,7 +106,7 @@ h1 {
   left: 0;
   right: 0;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   height: 2px;
   border-radius: 5px;
   transform: scaleX(0);
@@ -191,6 +192,7 @@ button {
   height: fit-content;
   letter-spacing: 0.2rem;
   cursor: pointer;
+  font-family: 'Alata', sans-serif;
 }
 
 button:hover {
